@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>Interest Rate Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mainDiv">
+      <h1 class="mainHeading">Total Interest Amount Calculator:</h1>
+
+      <div class="formula">
+        <p>
+          <span class="totalInterest">Total Interest Amount</span> &equals;
+          <span class="amount">Amount</span> &times;
+          <span class="interestRate">Interest Rate</span> &times;
+          <span class="time">Time</span> / 100
+        </p>
+      </div>
+      <div class="output">
+        <p><span class="totalInterest">Total Interest Amount</span> &equals;</p>
+        <input type="text" placeholder="Enter amount" class="principleAmount" />
+        &times;
+        <input
+          type="text"
+          placeholder="Enter interest rate in percent"
+          class="interestRateInput"
+        />
+        &times;
+        <input
+          type="text"
+          placeholder="Enter time frame in days"
+          class="timeFrame"
+        />
+      </div>
+      <div class="button">
+        <button>Calculate:</button>
+      </div>
+    </div>
+    <footer>
+      <script src="/JavaScript/index.js"></script>
+    </footer>
+  </body>
 </html>

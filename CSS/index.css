@@ -1,0 +1,67 @@
+/* Custom Properties */
+:root {
+  --text: #022222;
+  --background: #f0fefe;
+  --primary: #72f8f8;
+  --secondary: #c5fcfc;
+  --accent: #0ce9e9;
+}
+
+* {
+  color: var(--text);
+}
+
+.mainDiv {
+  background-color: var(--background);
+  height: fit-content;
+  width: 60rem;
+  margin: 8rem auto;
+  border: var(--text) 5px outset;
+  border-radius: 10px;
+}
+
+.mainHeading {
+  text-align: center;
+}
+
+.formula,
+.output {
+  text-align: center;
+}
+
+.formula {
+  font-size: 20px;
+}
+
+.output {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output input {
+  height: 1.2rem;
+  width: 10.5rem;
+  background-color: var(--primary);
+}
+
+.button {
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+}
+
+button {
+  margin: auto;
+  height: 5rem;
+  width: 5rem;
+  font-weight: bolder;
+  border: var(--accent) 5px outset;
+  border-radius: 100%;
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+button:hover {
+  translate: 10px 10px;
+}
